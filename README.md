@@ -1,5 +1,7 @@
 # Fulcro - :initLocalState misbehaving
 
+Related to this [issue](https://github.com/fulcrologic/fulcro/issues/451).
+
 For some reason, `:initLocalState` does not hot reload in any way although
 recompilation is successful and any other change to a component does apply as
 expected.
