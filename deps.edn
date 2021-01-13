@@ -1,5 +1,5 @@
 {:deps
- {com.fulcrologic/fulcro {:mvn/version "3.4.9"}
+ {com.fulcrologic/fulcro {:mvn/version "3.4.13-SNAPSHOT"}
   org.clojure/clojure    {:mvn/version "1.10.1"}}
 
  :paths
