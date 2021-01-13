@@ -1,0 +1,12 @@
+{:deps
+ {com.fulcrologic/fulcro {:mvn/version "3.4.9"}
+  org.clojure/clojure    {:mvn/version "1.10.1"}}
+
+ :paths
+ ["src/main"]
+
+ :aliases
+ {:cljs
+  {:extra-deps {binaryage/devtools   {:mvn/version "0.9.10"}
+                thheller/shadow-cljs {:mvn/version "2.11.4"}}
+   :main-opts  ["-m" "shadow.cljs.devtools.cli"]}}}

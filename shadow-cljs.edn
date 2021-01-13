@@ -1,0 +1,21 @@
+{:builds
+ {:app-dev
+  {:asset-path       "/js"
+   :compiler-options {:infer-externs :auto}
+   :devtools         {:after-load app.root/mount
+                      :preloads   [com.fulcrologic.fulcro.inspect.preload
+                                   shadow.remote.runtime.cljs.browser]}
+   :modules          {:main {:entries [app.root]
+                             :init-fn app.root/init}}
+   :output-dir       "public/js"
+   :target           :browser}}
+
+ :deps
+ {:alias [:cljs]}
+ 
+ :dev-http
+ {8000 "public/"}
+ 
+ :nrepl
+ {:port 4000}
+ }
